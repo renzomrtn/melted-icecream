@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "line_item_id": "LI-20250910-26ZQ",
+    "proponent": "John Doe",
+    "title": "HIV/AIDS Awareness Seminar",
+    "area": "Health",
+    "budget": 500000,
+    "spent": 300000,
+    "dates": {
+      "started": "2024-01-15",
+      "due": "2024-12-15",
+      "accomplished": "2024-12-15"
+    },
+    "progress": 72,
+    "status": "In Progress",
+    "expenseVerification": "Not Ready",
+    "committees": [
+      {
+        "name": "Logistics",
+        "chairman": "Alice Cruz",
+        "viceChairman": "Mark Reyes",
+        "members": [
+          "Leo Santos",
+          "Nina Lopez",
+          "Carlo Diaz",
+          "Ana Cruz"
+        ]
+      },
+      {
+        "name": "Technical",
+        "chairman": "Brian Lim",
+        "viceChairman": "Ella Torres",
+        "members": [
+          "Jason Tan",
+          "Paolo Cruz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "line_item_id": "LI-20250911-43XR",
+    "proponent": "Maria Garcia",
+    "title": "Anti-Illegal Drugs Seminar",
+    "area": "Public Safety",
+    "budget": 1200000,
+    "spent": 800000,
+    "dates": {
+      "started": "2024-02-01",
+      "due": "2025-03-30",
+      "accomplished": "2025-03-30"
+    },
+    "progress": 50,
+    "status": "In Progress",
+    "expenseVerification": "Not Ready",
+    "committees": [
+      {
+        "name": "Food",
+        "chairman": "Karen Bautista",
+        "viceChairman": "Miguel Ramos",
+        "members": [
+          "Ana Cruz",
+          "Peter Ong"
+        ]
+      },
+      {
+        "name": "Security",
+        "chairman": "Rafael Gomez",
+        "viceChairman": "Luis Mendoza",
+        "members": [
+          "Jose Rivera",
+          "Marco Dela Cruz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "line_item_id": "LI-20250912-78MP",
+    "proponent": "Roberto Santos",
+    "title": "Leadership Training Camp",
+    "area": "Education",
+    "budget": 750000,
+    "spent": 750000,
+    "dates": {
+      "started": "2024-03-10",
+      "due": "2024-11-10",
+      "accomplished": "2024-11-10"
+    },
+    "progress": 100,
+    "status": "Completed",
+    "expenseVerification": "Ready",
+    "committees": [
+      {
+        "name": "Food",
+        "chairman": "Karen Bautista",
+        "viceChairman": "Miguel Ramos",
+        "members": [
+          "Ana Cruz",
+          "Peter Ong"
+        ]
+      },
+      {
+        "name": "Security",
+        "chairman": "Rafael Gomez",
+        "viceChairman": "Luis Mendoza",
+        "members": [
+          "Jose Rivera",
+          "Marco Dela Cruz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "line_item_id": "LI-20250913-91KL",
+    "proponent": "Sarah Johnson",
+    "title": "Inter-Barangay Sports League",
+    "area": "Sports",
+    "budget": 900000,
+    "spent": 450000,
+    "dates": {
+      "started": "2024-04-20",
+      "due": "2025-04-20",
+      "accomplished": "2025-04-20"
+    },
+    "progress": 63,
+    "status": "In Progress",
+    "expenseVerification": "Not Ready",
+    "committees": [
+      {
+        "name": "Food",
+        "chairman": "Karen Bautista",
+        "viceChairman": "Miguel Ramos",
+        "members": [
+          "Ana Cruz",
+          "Peter Ong"
+        ]
+      },
+      {
+        "name": "Security",
+        "chairman": "Rafael Gomez",
+        "viceChairman": "Luis Mendoza",
+        "members": [
+          "Jose Rivera",
+          "Marco Dela Cruz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "line_item_id": "LI-20250914-52ND",
+    "proponent": "Michael Brown",
+    "title": "Youth Development Workshop",
+    "area": "Social Services",
+    "budget": 350000,
+    "spent": 100000,
+    "dates": {
+      "started": "2024-06-01",
+      "due": "2024-12-31",
+      "accomplished": "2024-12-31"
+    },
+    "progress": 25,
+    "status": "In Progress",
+    "expenseVerification": "Not Ready",
+    "committees": [
+      {
+        "name": "Food",
+        "chairman": "Karen Bautista",
+        "viceChairman": "Miguel Ramos",
+        "members": [
+          "Ana Cruz",
+          "Peter Ong"
+        ]
+      },
+      {
+        "name": "Security",
+        "chairman": "Rafael Gomez",
+        "viceChairman": "Luis Mendoza",
+        "members": [
+          "Jose Rivera",
+          "Marco Dela Cruz"
+        ]
+      }
+    ]
+  }
+]
