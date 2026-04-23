@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "line_item_id": "LI-20250910-26ZQ",
+    "line_item_id": "LI-20260910-26ZQ",
     "proponent": "John Doe",
     "title": "HIV/AIDS Awareness Seminar",
     "area": "Health",
     "budget": 500000,
     "spent": 300000,
     "dates": {
-      "started": "2024-01-15",
-      "due": "2024-12-15",
-      "accomplished": "2024-12-15"
+      "started": "2019-01-15",
+      "due": "2019-12-15",
+      "accomplished": "2019-12-15"
     },
     "progress": 72,
     "status": "In Progress",
@@ -40,16 +40,16 @@
   },
   {
     "id": 2,
-    "line_item_id": "LI-20250911-43XR",
+    "line_item_id": "LI-20260911-43XR",
     "proponent": "Maria Garcia",
     "title": "Anti-Illegal Drugs Seminar",
     "area": "Public Safety",
     "budget": 1200000,
     "spent": 800000,
     "dates": {
-      "started": "2024-02-01",
-      "due": "2025-03-30",
-      "accomplished": "2025-03-30"
+      "started": "2018-02-01",
+      "due": "2018-03-30",
+      "accomplished": "2018-03-30"
     },
     "progress": 50,
     "status": "In Progress",
@@ -77,16 +77,16 @@
   },
   {
     "id": 3,
-    "line_item_id": "LI-20250912-78MP",
+    "line_item_id": "LI-20260912-78MP",
     "proponent": "Roberto Santos",
     "title": "Leadership Training Camp",
     "area": "Education",
     "budget": 750000,
     "spent": 750000,
     "dates": {
-      "started": "2024-03-10",
-      "due": "2024-11-10",
-      "accomplished": "2024-11-10"
+      "started": "2017-03-10",
+      "due": "2017-11-10",
+      "accomplished": "2017-11-10"
     },
     "progress": 100,
     "status": "Completed",
@@ -114,16 +114,16 @@
   },
   {
     "id": 4,
-    "line_item_id": "LI-20250913-91KL",
+    "line_item_id": "LI-20260913-91KL",
     "proponent": "Sarah Johnson",
     "title": "Inter-Barangay Sports League",
     "area": "Sports",
     "budget": 900000,
     "spent": 450000,
     "dates": {
-      "started": "2024-04-20",
-      "due": "2025-04-20",
-      "accomplished": "2025-04-20"
+      "started": "2016-04-20",
+      "due": "2016-04-20",
+      "accomplished": "2016-04-20"
     },
     "progress": 63,
     "status": "In Progress",
@@ -151,16 +151,238 @@
   },
   {
     "id": 5,
-    "line_item_id": "LI-20250914-52ND",
+    "line_item_id": "LI-20260914-52ND",
     "proponent": "Michael Brown",
     "title": "Youth Development Workshop",
     "area": "Social Services",
     "budget": 350000,
     "spent": 100000,
     "dates": {
-      "started": "2024-06-01",
-      "due": "2024-12-31",
-      "accomplished": "2024-12-31"
+      "started": "2025-06-01",
+      "due": "2025-12-31",
+      "accomplished": "2025-12-31"
+    },
+    "progress": 25,
+    "status": "In Progress",
+    "expenseVerification": "Not Ready",
+    "committees": [
+      {
+        "name": "Food",
+        "chairman": "Karen Bautista",
+        "viceChairman": "Miguel Ramos",
+        "members": [
+          "Ana Cruz",
+          "Peter Ong"
+        ]
+      },
+      {
+        "name": "Security",
+        "chairman": "Rafael Gomez",
+        "viceChairman": "Luis Mendoza",
+        "members": [
+          "Jose Rivera",
+          "Marco Dela Cruz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "line_item_id": "LI-20260914-52ND",
+    "proponent": "Michael Brown",
+    "title": "Youth Development Workshop",
+    "area": "Social Services",
+    "budget": 350000,
+    "spent": 100000,
+    "dates": {
+      "started": "2026-06-01",
+      "due": "2026-12-31",
+      "accomplished": "2026-12-31"
+    },
+    "progress": 25,
+    "status": "In Progress",
+    "expenseVerification": "Not Ready",
+    "committees": [
+      {
+        "name": "Food",
+        "chairman": "Karen Bautista",
+        "viceChairman": "Miguel Ramos",
+        "members": [
+          "Ana Cruz",
+          "Peter Ong"
+        ]
+      },
+      {
+        "name": "Security",
+        "chairman": "Rafael Gomez",
+        "viceChairman": "Luis Mendoza",
+        "members": [
+          "Jose Rivera",
+          "Marco Dela Cruz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "line_item_id": "LI-20260914-52ND",
+    "proponent": "Michael Brown",
+    "title": "Youth Development Workshop",
+    "area": "Social Services",
+    "budget": 350000,
+    "spent": 100000,
+    "dates": {
+      "started": "2027-06-01",
+      "due": "2027-12-31",
+      "accomplished": "2027-12-31"
+    },
+    "progress": 25,
+    "status": "In Progress",
+    "expenseVerification": "Not Ready",
+    "committees": [
+      {
+        "name": "Food",
+        "chairman": "Karen Bautista",
+        "viceChairman": "Miguel Ramos",
+        "members": [
+          "Ana Cruz",
+          "Peter Ong"
+        ]
+      },
+      {
+        "name": "Security",
+        "chairman": "Rafael Gomez",
+        "viceChairman": "Luis Mendoza",
+        "members": [
+          "Jose Rivera",
+          "Marco Dela Cruz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "line_item_id": "LI-20260914-52ND",
+    "proponent": "Michael Brown",
+    "title": "Youth Development Workshop",
+    "area": "Social Services",
+    "budget": 350000,
+    "spent": 100000,
+    "dates": {
+      "started": "2023-06-01",
+      "due": "2023-12-31",
+      "accomplished": "2023-12-31"
+    },
+    "progress": 25,
+    "status": "In Progress",
+    "expenseVerification": "Not Ready",
+    "committees": [
+      {
+        "name": "Food",
+        "chairman": "Karen Bautista",
+        "viceChairman": "Miguel Ramos",
+        "members": [
+          "Ana Cruz",
+          "Peter Ong"
+        ]
+      },
+      {
+        "name": "Security",
+        "chairman": "Rafael Gomez",
+        "viceChairman": "Luis Mendoza",
+        "members": [
+          "Jose Rivera",
+          "Marco Dela Cruz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "line_item_id": "LI-20260914-52ND",
+    "proponent": "Michael Brown",
+    "title": "Youth Development Workshop",
+    "area": "Social Services",
+    "budget": 350000,
+    "spent": 100000,
+    "dates": {
+      "started": "2022-06-01",
+      "due": "2022-12-31",
+      "accomplished": "2022-12-31"
+    },
+    "progress": 25,
+    "status": "In Progress",
+    "expenseVerification": "Not Ready",
+    "committees": [
+      {
+        "name": "Food",
+        "chairman": "Karen Bautista",
+        "viceChairman": "Miguel Ramos",
+        "members": [
+          "Ana Cruz",
+          "Peter Ong"
+        ]
+      },
+      {
+        "name": "Security",
+        "chairman": "Rafael Gomez",
+        "viceChairman": "Luis Mendoza",
+        "members": [
+          "Jose Rivera",
+          "Marco Dela Cruz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "line_item_id": "LI-20260914-52ND",
+    "proponent": "Michael Brown",
+    "title": "Youth Development Workshop",
+    "area": "Social Services",
+    "budget": 350000,
+    "spent": 100000,
+    "dates": {
+      "started": "2021-06-01",
+      "due": "2021-12-31",
+      "accomplished": "2021-12-31"
+    },
+    "progress": 25,
+    "status": "In Progress",
+    "expenseVerification": "Not Ready",
+    "committees": [
+      {
+        "name": "Food",
+        "chairman": "Karen Bautista",
+        "viceChairman": "Miguel Ramos",
+        "members": [
+          "Ana Cruz",
+          "Peter Ong"
+        ]
+      },
+      {
+        "name": "Security",
+        "chairman": "Rafael Gomez",
+        "viceChairman": "Luis Mendoza",
+        "members": [
+          "Jose Rivera",
+          "Marco Dela Cruz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "line_item_id": "LI-20260914-52ND",
+    "proponent": "Michael Brown",
+    "title": "Youth Development Workshop",
+    "area": "Social Services",
+    "budget": 350000,
+    "spent": 100000,
+    "dates": {
+      "started": "2020-06-01",
+      "due": "2020-12-31",
+      "accomplished": "2020-12-31"
     },
     "progress": 25,
     "status": "In Progress",

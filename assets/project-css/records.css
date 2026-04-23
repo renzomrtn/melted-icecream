@@ -1,0 +1,481 @@
+/* ─── Base ──────────────────────────────────────────────── */
+.archive-section {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    padding: 1.75rem 2rem 3rem;
+    background: #f4f6f9;
+    min-height: 100%;
+    color: #1a2035;
+    box-sizing: border-box;
+}
+
+/* ─── Header ────────────────────────────────────────────── */
+.archive-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1.1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.header-eyebrow {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2e4fa3;
+    margin: 0 0 0.2rem;
+}
+
+.header-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a2035;
+    margin: 0;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+/* ─── Search ────────────────────────────────────────────── */
+.search-box {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    color: #9ca3af;
+    pointer-events: none;
+}
+
+.search-box input {
+    font-family: inherit;
+    font-size: 0.83rem;
+    padding: 0.48rem 1rem 0.48rem 2.1rem;
+    border: 1px solid #dde1ea;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #1a2035;
+    width: 230px;
+    outline: none;
+    transition: border-color 0.18s, box-shadow 0.18s;
+}
+
+.search-box input::placeholder {
+    color: #b0b8cc;
+}
+
+.search-box input:focus {
+    border-color: #2e4fa3;
+    box-shadow: 0 0 0 3px rgba(46, 79, 163, .12);
+}
+
+/* ─── Year Panels Container ─────────────────────────────── */
+.year-panels {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+/* ─── Year Panel ────────────────────────────────────────── */
+.year-panel {
+    background: #ffffff;
+    border: 1px solid #e2e6f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05), 0 4px 12px rgba(0, 0, 0, .03);
+    transition: box-shadow 0.18s;
+}
+
+.year-panel.panel-open {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .06), 0 8px 24px rgba(46, 79, 163, .07);
+    border-color: #c5d0eb;
+}
+
+/* ─── Panel Header ──────────────────────────────────────── */
+.year-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    gap: 1rem;
+    user-select: none;
+    transition: background 0.14s;
+}
+
+.year-panel-header:hover {
+    background: #fafbfd;
+}
+
+.panel-open .year-panel-header {
+    background: #f7f9fd;
+    border-bottom: 1px solid #e8ecf4;
+}
+
+.year-panel-left {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.year-chevron {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    color: #b0b8cc;
+    transition: color 0.14s;
+}
+
+.year-chevron svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.22s ease;
+}
+
+.year-chevron.chevron-open {
+    color: #2e4fa3;
+}
+
+.year-chevron.chevron-open svg {
+    transform: rotate(90deg);
+}
+
+.year-label-group {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.year-label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a2035;
+    letter-spacing: -0.01em;
+}
+
+.year-admin-tag {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: #eef2fc;
+    color: #2e4fa3;
+    padding: 0.15rem 0.55rem;
+    border-radius: 99px;
+    border: 1px solid rgba(46, 79, 163, .18);
+}
+
+.year-panel-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.year-stats {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.year-stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    color: #6b7a99;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.year-stat.total {
+    font-weight: 700;
+    color: #1a2035;
+}
+
+.year-stat-divider {
+    width: 1px;
+    height: 14px;
+    background: #e2e6f0;
+}
+
+.stat-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dot-green {
+    background: #10b981;
+}
+
+.dot-amber {
+    background: #f59e0b;
+}
+
+.year-budget {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #2e4fa3;
+    background: #eef2fc;
+    border: 1px solid rgba(46, 79, 163, .18);
+    padding: 0.25rem 0.7rem;
+    border-radius: 99px;
+    white-space: nowrap;
+}
+
+/* ─── Panel Body ────────────────────────────────────────── */
+.panel-body {
+    padding: 0;
+}
+
+/* ─── Table ─────────────────────────────────────────────── */
+.archive-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+}
+
+.archive-table thead tr {
+    background: #f7f9fc;
+    border-bottom: 1px solid #e8ecf4;
+}
+
+.archive-table thead th {
+    padding: 0.75rem 1rem;
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #6b7a99;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.archive-table tbody td {
+    padding: 0.9rem 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #f0f2f7;
+}
+
+.archive-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.archive-row {
+    transition: background 0.13s;
+}
+
+.archive-row:hover {
+    background: #fafbfd;
+}
+
+/* ─── Proponent Cell ────────────────────────────────────── */
+.proponent-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.proponent-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #eef2fc;
+    color: #2e4fa3;
+    font-size: 0.65rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1.5px solid rgba(46, 79, 163, .18);
+}
+
+.proponent-name {
+    font-weight: 600;
+    color: #1a2035;
+    white-space: nowrap;
+}
+
+.project-title {
+    font-weight: 600;
+    color: #1a2035;
+    line-height: 1.35;
+}
+
+/* ─── Info Cell ─────────────────────────────────────────── */
+.info-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+}
+
+.info-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    white-space: nowrap;
+}
+
+.info-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #b0b8cc;
+    min-width: 38px;
+    flex-shrink: 0;
+}
+
+.info-value {
+    font-size: 0.78rem;
+    color: #5a6480;
+}
+
+.info-mono {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.73rem;
+    background: #f0f2f7;
+    color: #1a2035;
+    padding: 0.08rem 0.32rem;
+    border-radius: 4px;
+}
+
+.info-spent {
+    color: #dc2626;
+    font-weight: 500;
+}
+
+/* ─── Progress ──────────────────────────────────────────── */
+.progress-cell {
+    min-width: 150px;
+}
+
+.progress-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+}
+
+.progress-pct {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #1a2035;
+    flex-shrink: 0;
+}
+
+.progress-track {
+    height: 5px;
+    background: #e8ecf4;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 0.4s ease;
+}
+
+.fill-green {
+    background: #10b981;
+}
+
+.fill-blue {
+    background: #2e4fa3;
+}
+
+/* ─── Badges ────────────────────────────────────────────── */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 99px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1;
+    border: 1px solid transparent;
+}
+
+.badge-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.badge-green {
+    background: #ecfdf5;
+    color: #059669;
+    border-color: #a7f3d0;
+}
+
+.badge-green .badge-dot {
+    background: #059669;
+}
+
+.badge-amber {
+    background: #fffbeb;
+    color: #d97706;
+    border-color: #fde68a;
+}
+
+.badge-amber .badge-dot {
+    background: #d97706;
+}
+
+/* ─── Panel Pagination ──────────────────────────────────── */
+.panel-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.65rem 1rem;
+    border-top: 1px solid #f0f2f7;
+    background: #f7f9fc;
+}
+
+.page-info {
+    font-size: 0.75rem;
+    color: #b0b8cc;
+    font-weight: 500;
+}
+
+/* ─── Empty State ───────────────────────────────────────── */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 2.5rem;
+    color: #c4cde0;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.empty-state svg {
+    width: 36px;
+    height: 36px;
+    opacity: 0.5;
+}
