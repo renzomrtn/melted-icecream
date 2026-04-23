@@ -1,12 +1,11 @@
-<!-- Project Management/Tabs/Archive.vue -->
+<!-- Project Management/Tabs/Records.vue -->
 <template>
-    <section class="archive-section">
+    <section class="record-section">
 
         <!-- Header -->
-        <div class="archive-header">
+        <div class="record-header">
             <div class="header-left">
-                <p class="header-eyebrow">Project Management</p>
-                <h4 class="header-title">Project Archive</h4>
+                <h4 class="header-title">Project Records</h4>
             </div>
             <div class="header-actions">
                 <div class="search-box">
@@ -74,7 +73,15 @@
 
                     <!-- TABLE -->
                     <template v-else>
-                        <table class="archive-table">
+                        <table class="record-table">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
                             <thead>
                                 <tr>
                                     <th>Proponent</th>
@@ -86,7 +93,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="project in filteredForYear(year)" :key="project.id" class="archive-row">
+                                <tr v-for="project in filteredForYear(year)" :key="project.id" class="record-row">
                                     <td>
                                         <div class="proponent-cell">
                                             <div class="proponent-avatar">{{ getInitials(project.proponent) }}</div>

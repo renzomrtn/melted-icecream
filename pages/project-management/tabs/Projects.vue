@@ -6,7 +6,7 @@
         <div class="projects-header">
             <div class="header-left">
                 <p class="header-eyebrow">Project Management</p>
-                <h4 class="header-title">Projects for 2025</h4>
+                <h4 class="header-title">Projects for {{ currentYear }}</h4>
             </div>
             <div class="header-actions">
                 <div class="search-box">
@@ -31,7 +31,7 @@
         <!-- Stats Bar -->
         <div class="stats-bar">
             <div class="stat-item">
-                <span class="stat-value">{{ projects.length }}</span>
+                <span class="stat-value">{{ filteredProjects.length }}</span>
                 <span class="stat-label">Total Projects</span>
             </div>
             <div class="stat-divider"></div>
@@ -43,11 +43,6 @@
             <div class="stat-item">
                 <span class="stat-value">{{ inProgressCount }}</span>
                 <span class="stat-label">In Progress</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-value">₱{{ formatCurrency(totalBudget) }}</span>
-                <span class="stat-label">Total Budget</span>
             </div>
         </div>
 
@@ -68,7 +63,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <template v-for="project in projects" :key="project.id">
+                    <template v-for="project in filteredProjects" :key="project.id">
 
                         <!-- Main Row -->
                         <tr class="project-row" :class="{ 'row-expanded': expandedRows.has(project.id) }">
@@ -296,6 +291,15 @@ import projectsData from '~/assets/data/projects.json';
 const MEMBER_LIMIT = 2;
 
 const projects = ref(projectsData);
+
+const currentYear = new Date().getFullYear();
+
+const filteredProjects = computed(() => {
+    return projects.value.filter(project => {
+        return new Date(project.dates.started).getFullYear() === currentYear;
+    });
+});
+
 const expandedRows = ref(new Set());
 
 const toggleRow = (id) => {
@@ -318,10 +322,13 @@ const visibleMembers = (members = []) => members.slice(0, MEMBER_LIMIT);
 const hiddenMemberCount = (members = []) => Math.max(0, members.length - MEMBER_LIMIT);
 const overflowPreviewAvatars = (members = []) => members.slice(MEMBER_LIMIT, MEMBER_LIMIT + 2);
 
-const completedCount = computed(() => projects.value.filter(p => p.status === 'Completed').length);
-const inProgressCount = computed(() => projects.value.filter(p => p.status !== 'Completed').length);
-const totalBudget = computed(() => projects.value.reduce((s, p) => s + (p.budget || 0), 0));
+const completedCount = computed(() =>
+    filteredProjects.value.filter(p => p.status === 'Completed').length
+);
 
+const inProgressCount = computed(() =>
+    filteredProjects.value.filter(p => p.status !== 'Completed').length
+);
 const getInitials = (name) =>
     (name || '?').split(' ').map(n => n[0]).slice(0, 2).join('').toUpperCase();
 
